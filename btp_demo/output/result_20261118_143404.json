@@ -1,0 +1,10 @@
+{
+ "source": "live: groq:openai/gpt-oss-120b, answered in 3s",
+ "idea": "Prioritize jobs by weight\u2011per\u2011processing amplified by urgency, and assign each job to the feasible machine that keeps high slack while also favouring less\u2011loaded machines.",
+ "code": "def priority(f, c):\n    # weight per processing time, boosted for urgent (tight\u2011deadline) jobs\n    return f[\"wp\"] * (1.0 + f[\"urgency\"])\n\n\ndef choose_machine(i, f, c, M):\n    # score = remaining slack after placement minus a small load penalty\n    # (higher score \u2192 better machine). Infeasible machines have slack_after = -1.\n    load_norm = M[\"load\"] / c[\"max_d\"]          # normalise load by max deadline\n    scores = M[\"slack_after\"] - 0.1 * load_norm\n    # ensure infeasible machines get the worst possible score\n    scores = np.where(M[\"slack_after\"] >= 0, scores, -np.inf)\n    return scores",
+ "lost": 11.0,
+ "wspt_lost": 11.0,
+ "opt_lost": 1.0,
+ "train_gap": 4.3020965053029085,
+ "train_gap_wspt": 4.183242253844033
+}

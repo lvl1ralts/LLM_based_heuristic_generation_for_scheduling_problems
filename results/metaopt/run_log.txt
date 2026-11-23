@@ -1,0 +1,24 @@
+in-dist        WSPT         gap  26.32%  lost 17 vs opt 7  cause=decoder  verified=True proved=False  (240s, 599 vars)
+in-dist        WSPT-Laxity  gap  15.91%  lost 17 vs opt 10  cause=decoder  verified=True proved=False  (240s, 869 vars)
+scale-shift    WSPT         gap   2.63%  lost 6 vs opt 5  cause=decoder  verified=True proved=False  (240s, 957 vars)
+scale-shift    WSPT-Laxity  gap   5.56%  lost 15 vs opt 13  cause=ranking  verified=True proved=False  (240s, 1317 vars)
+bimodal p      WSPT         gap  60.87%  lost 18 vs opt 4  cause=ranking  verified=True proved=False  (240s, 629 vars)
+bimodal p      WSPT-Laxity  gap  18.92%  lost 27 vs opt 20  cause=decoder  verified=True proved=False  (240s, 929 vars)
+lognormal p    WSPT         gap  27.78%  lost 11 vs opt 1  cause=decoder  verified=True proved=False  (240s, 599 vars)
+lognormal p    WSPT-Laxity  gap   0.00%  lost 33 vs opt 33  cause=ranking  verified=True proved=False  (240s, 869 vars)
+tight T=0.8    WSPT         no solution in 14s
+tight T=0.8    WSPT-Laxity  no solution in 2s
+loose T=0.1    WSPT         gap  27.78%  lost 10 vs opt 0  cause=decoder  verified=True proved=False  (240s, 599 vars)
+loose T=0.1    WSPT-Laxity  gap  18.87%  lost 10 vs opt 0  cause=decoder  verified=True proved=False  (240s, 869 vars)
+w correlated   WSPT         gap  42.11%  lost 37 vs opt 21  cause=decoder  verified=True proved=False  (240s, 491 vars)
+w correlated   WSPT-Laxity  gap  39.02%  lost 39 vs opt 23  cause=ranking  verified=True proved=False  (240s, 653 vars)
+w anticorr     WSPT         gap  17.86%  lost 17 vs opt 7  cause=decoder  verified=True proved=False  (240s, 491 vars)
+w anticorr     WSPT-Laxity  gap  14.29%  lost 9 vs opt 5  cause=decoder  verified=True proved=False  (240s, 653 vars)
+narrow R=0.1   WSPT         gap  33.33%  lost 14 vs opt 4  cause=decoder  verified=True proved=False  (240s, 599 vars)
+narrow R=0.1   WSPT-Laxity  no solution in 2s
+many machines  WSPT         gap  22.86%  lost 13 vs opt 5  cause=decoder  verified=True proved=False  (240s, 761 vars)
+many machines  WSPT-Laxity  no solution in 5s
+single m=1     WSPT         gap  25.71%  lost 20 vs opt 11  cause=ranking  verified=True proved=False  (240s, 533 vars)
+single m=1     WSPT-Laxity  gap  12.77%  lost 11 vs opt 5  cause=ranking  verified=True proved=False  (240s, 893 vars)
+large n        WSPT         no solution in 440s
+large n        WSPT-Laxity  no solution in 4s

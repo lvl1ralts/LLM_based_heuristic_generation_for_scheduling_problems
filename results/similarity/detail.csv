@@ -1,0 +1,273 @@
+setting,case,rule,mean_gap,worst_gap,optimal_on,n_inst,opt_proved,opt_loss_pct
+"m=1, n=50",none similar,WSPT,0.069,0.499,20,30,30,4.862
+"m=1, n=50",none similar,WSPT-EDD,0.069,0.499,20,30,30,4.862
+"m=1, n=50",none similar,MooreHodgson-W,0.187,0.893,13,30,30,4.862
+"m=1, n=50",none similar,Density-wpd,0.591,1.611,5,30,30,4.862
+"m=1, n=50",none similar,MaxWeight,0.669,3.322,7,30,30,4.862
+"m=1, n=50",none similar,MooreHodgson-U,8.63,14.668,0,30,30,4.862
+"m=1, n=50",none similar,SPT,8.639,14.668,0,30,30,4.862
+"m=1, n=50",none similar,EDD,11.55,21.575,0,30,30,4.862
+"m=1, n=50",none similar,Slack,15.103,27.795,0,30,30,4.862
+"m=1, n=50",none similar,MinSlack,16.802,30.793,0,30,30,4.862
+"m=1, n=50",none similar,LPT,41.324,50.479,0,30,30,4.862
+"m=1, n=50",none similar,WSPT-Congestion,0.314,0.914,7,30,30,4.862
+"m=1, n=50",none similar,WSPT-Laxity,0.082,0.499,19,30,30,4.862
+"m=1, n=50",none similar,Value-per-Slack,1.588,6.507,2,30,30,4.862
+"m=1, n=50",none similar,MH-Density,0.804,1.673,3,30,30,4.862
+"m=1, n=50",none similar,MH-MinSlack,21.291,31.216,0,30,30,4.862
+"m=1, n=50",none similar,Random,16.909,28.124,0,30,30,4.862
+"m=1, n=50",p similar,WSPT,0.121,0.766,17,30,30,5.763
+"m=1, n=50",p similar,WSPT-EDD,0.121,0.766,17,30,30,5.763
+"m=1, n=50",p similar,MooreHodgson-W,0.168,1.024,15,30,30,5.763
+"m=1, n=50",p similar,Density-wpd,0.587,2.127,2,30,30,5.763
+"m=1, n=50",p similar,MaxWeight,0.108,0.766,22,30,30,5.763
+"m=1, n=50",p similar,MooreHodgson-U,15.096,20.833,0,30,30,5.763
+"m=1, n=50",p similar,SPT,15.067,19.181,0,30,30,5.763
+"m=1, n=50",p similar,EDD,17.833,26.778,0,30,30,5.763
+"m=1, n=50",p similar,Slack,18.481,26.428,0,30,30,5.763
+"m=1, n=50",p similar,MinSlack,18.41,27.05,0,30,30,5.763
+"m=1, n=50",p similar,LPT,20.465,34.464,0,30,30,5.763
+"m=1, n=50",p similar,WSPT-Congestion,0.309,1.093,5,30,30,5.763
+"m=1, n=50",p similar,WSPT-Laxity,0.093,0.766,19,30,30,5.763
+"m=1, n=50",p similar,Value-per-Slack,0.65,2.597,2,30,30,5.763
+"m=1, n=50",p similar,MH-Density,0.678,3.734,2,30,30,5.763
+"m=1, n=50",p similar,MH-MinSlack,18.151,27.05,0,30,30,5.763
+"m=1, n=50",p similar,Random,18.782,27.322,0,30,30,5.763
+"m=1, n=50",d similar,WSPT,0.181,0.923,13,30,30,17.055
+"m=1, n=50",d similar,WSPT-EDD,0.181,0.923,13,30,30,17.055
+"m=1, n=50",d similar,MooreHodgson-W,0.771,2.682,7,30,30,17.055
+"m=1, n=50",d similar,Density-wpd,0.296,1.489,7,30,30,17.055
+"m=1, n=50",d similar,MaxWeight,4.367,18.116,0,30,30,17.055
+"m=1, n=50",d similar,MooreHodgson-U,13.393,21.562,0,30,30,17.055
+"m=1, n=50",d similar,SPT,13.521,21.562,0,30,30,17.055
+"m=1, n=50",d similar,EDD,24.932,34.684,0,30,30,17.055
+"m=1, n=50",d similar,Slack,22.424,32.429,0,30,30,17.055
+"m=1, n=50",d similar,MinSlack,38.394,52.771,0,30,30,17.055
+"m=1, n=50",d similar,LPT,56.85,70.648,0,30,30,17.055
+"m=1, n=50",d similar,WSPT-Congestion,1.886,6.253,1,30,30,17.055
+"m=1, n=50",d similar,WSPT-Laxity,0.2,0.923,12,30,30,17.055
+"m=1, n=50",d similar,Value-per-Slack,5.257,18.116,0,30,30,17.055
+"m=1, n=50",d similar,MH-Density,0.928,2.734,4,30,30,17.055
+"m=1, n=50",d similar,MH-MinSlack,44.773,66.276,0,30,30,17.055
+"m=1, n=50",d similar,Random,29.034,47.43,0,30,30,17.055
+"m=1, n=50",w similar,WSPT,0.608,2.115,2,30,30,12.399
+"m=1, n=50",w similar,WSPT-EDD,0.608,2.115,2,30,30,12.399
+"m=1, n=50",w similar,MooreHodgson-W,0.608,2.115,2,30,30,12.399
+"m=1, n=50",w similar,Density-wpd,1.646,3.31,1,30,30,12.399
+"m=1, n=50",w similar,MaxWeight,7.45,17.954,0,30,30,12.399
+"m=1, n=50",w similar,MooreHodgson-U,0.668,1.373,1,30,30,12.399
+"m=1, n=50",w similar,SPT,0.665,1.373,2,30,30,12.399
+"m=1, n=50",w similar,EDD,4.197,8.979,0,30,30,12.399
+"m=1, n=50",w similar,Slack,7.227,12.68,0,30,30,12.399
+"m=1, n=50",w similar,MinSlack,9.929,14.26,0,30,30,12.399
+"m=1, n=50",w similar,LPT,33.944,42.152,0,30,30,12.399
+"m=1, n=50",w similar,WSPT-Congestion,0.945,2.716,0,30,30,12.399
+"m=1, n=50",w similar,WSPT-Laxity,0.644,2.115,1,30,30,12.399
+"m=1, n=50",w similar,Value-per-Slack,7.514,15.042,0,30,30,12.399
+"m=1, n=50",w similar,MH-Density,1.646,3.31,1,30,30,12.399
+"m=1, n=50",w similar,MH-MinSlack,14.257,23.186,0,30,30,12.399
+"m=1, n=50",w similar,Random,9.795,21.56,0,30,30,12.399
+"m=1, n=50",p & d similar,WSPT,0.151,1.646,17,30,30,21.28
+"m=1, n=50",p & d similar,WSPT-EDD,0.16,1.646,17,30,30,21.28
+"m=1, n=50",p & d similar,MooreHodgson-W,0.16,1.646,17,30,30,21.28
+"m=1, n=50",p & d similar,Density-wpd,0.324,1.591,11,30,30,21.28
+"m=1, n=50",p & d similar,MaxWeight,0.16,2.072,25,30,30,21.28
+"m=1, n=50",p & d similar,MooreHodgson-U,27.839,39.683,0,30,30,21.28
+"m=1, n=50",p & d similar,SPT,27.527,36.429,0,30,30,21.28
+"m=1, n=50",p & d similar,EDD,31.805,44.69,0,30,30,21.28
+"m=1, n=50",p & d similar,Slack,31.29,43.679,0,30,30,21.28
+"m=1, n=50",p & d similar,MinSlack,31.391,44.69,0,30,30,21.28
+"m=1, n=50",p & d similar,LPT,34.263,53.05,0,30,30,21.28
+"m=1, n=50",p & d similar,WSPT-Congestion,2.227,4.93,0,30,30,21.28
+"m=1, n=50",p & d similar,WSPT-Laxity,0.153,1.646,16,30,30,21.28
+"m=1, n=50",p & d similar,Value-per-Slack,0.272,2.615,13,30,30,21.28
+"m=1, n=50",p & d similar,MH-Density,0.311,1.591,11,30,30,21.28
+"m=1, n=50",p & d similar,MH-MinSlack,31.602,44.484,0,30,30,21.28
+"m=1, n=50",p & d similar,Random,30.244,40.625,0,30,30,21.28
+"m=1, n=50",p & w similar,WSPT,0.515,1.963,2,30,30,19.628
+"m=1, n=50",p & w similar,WSPT-EDD,0.515,1.963,2,30,30,19.628
+"m=1, n=50",p & w similar,MooreHodgson-W,0.514,1.963,2,30,30,19.628
+"m=1, n=50",p & w similar,Density-wpd,1.743,3.634,0,30,30,19.628
+"m=1, n=50",p & w similar,MaxWeight,1.08,2.349,12,30,30,19.628
+"m=1, n=50",p & w similar,MooreHodgson-U,1.683,2.574,0,30,30,19.628
+"m=1, n=50",p & w similar,SPT,1.628,2.574,0,30,30,19.628
+"m=1, n=50",p & w similar,EDD,3.312,5.584,0,30,30,19.628
+"m=1, n=50",p & w similar,Slack,2.954,5.086,0,30,30,19.628
+"m=1, n=50",p & w similar,MinSlack,3.478,5.537,0,30,30,19.628
+"m=1, n=50",p & w similar,LPT,5.522,7.689,0,30,30,19.628
+"m=1, n=50",p & w similar,WSPT-Congestion,1.41,3.487,0,30,30,19.628
+"m=1, n=50",p & w similar,WSPT-Laxity,0.555,1.82,1,30,30,19.628
+"m=1, n=50",p & w similar,Value-per-Slack,2.348,4.523,0,30,30,19.628
+"m=1, n=50",p & w similar,MH-Density,1.733,3.634,0,30,30,19.628
+"m=1, n=50",p & w similar,MH-MinSlack,3.499,5.537,0,30,30,19.628
+"m=1, n=50",p & w similar,Random,3.328,5.08,0,30,30,19.628
+"m=1, n=50",d & w similar,WSPT,0.367,1.065,8,30,30,26.263
+"m=1, n=50",d & w similar,WSPT-EDD,0.367,1.065,8,30,30,26.263
+"m=1, n=50",d & w similar,MooreHodgson-W,0.45,2.489,7,30,30,26.263
+"m=1, n=50",d & w similar,Density-wpd,0.729,2.639,4,30,30,26.263
+"m=1, n=50",d & w similar,MaxWeight,17.972,29.133,0,30,30,26.263
+"m=1, n=50",d & w similar,MooreHodgson-U,0.613,1.57,3,30,30,26.263
+"m=1, n=50",d & w similar,SPT,0.613,1.57,3,30,30,26.263
+"m=1, n=50",d & w similar,EDD,14.872,22.033,0,30,30,26.263
+"m=1, n=50",d & w similar,Slack,13.093,23.344,0,30,30,26.263
+"m=1, n=50",d & w similar,MinSlack,28.064,39.616,0,30,30,26.263
+"m=1, n=50",d & w similar,LPT,51.844,61.048,0,30,30,26.263
+"m=1, n=50",d & w similar,WSPT-Congestion,3.434,5.866,0,30,30,26.263
+"m=1, n=50",d & w similar,WSPT-Laxity,0.367,1.065,8,30,30,26.263
+"m=1, n=50",d & w similar,Value-per-Slack,25.453,36.31,0,30,30,26.263
+"m=1, n=50",d & w similar,MH-Density,0.812,2.714,4,30,30,26.263
+"m=1, n=50",d & w similar,MH-MinSlack,36.945,52.047,0,30,30,26.263
+"m=1, n=50",d & w similar,Random,20.759,38.788,0,30,30,26.263
+"m=1, n=50",p & d & w similar,WSPT,0.384,0.973,4,30,30,42.075
+"m=1, n=50",p & d & w similar,WSPT-EDD,0.407,0.973,3,30,30,42.075
+"m=1, n=50",p & d & w similar,MooreHodgson-W,0.856,3.354,0,30,30,42.075
+"m=1, n=50",p & d & w similar,Density-wpd,1.546,4.48,0,30,30,42.075
+"m=1, n=50",p & d & w similar,MaxWeight,2.548,3.051,0,30,30,42.075
+"m=1, n=50",p & d & w similar,MooreHodgson-U,3.337,4.187,0,30,30,42.075
+"m=1, n=50",p & d & w similar,SPT,3.34,4.303,0,30,30,42.075
+"m=1, n=50",p & d & w similar,EDD,6.697,8.484,0,30,30,42.075
+"m=1, n=50",p & d & w similar,Slack,6.736,8.121,0,30,30,42.075
+"m=1, n=50",p & d & w similar,MinSlack,6.837,8.484,0,30,30,42.075
+"m=1, n=50",p & d & w similar,LPT,10.342,13.829,0,30,30,42.075
+"m=1, n=50",p & d & w similar,WSPT-Congestion,5.523,7.108,0,30,30,42.075
+"m=1, n=50",p & d & w similar,WSPT-Laxity,0.49,0.973,2,30,30,42.075
+"m=1, n=50",p & d & w similar,Value-per-Slack,3.705,5.201,0,30,30,42.075
+"m=1, n=50",p & d & w similar,MH-Density,1.534,4.48,0,30,30,42.075
+"m=1, n=50",p & d & w similar,MH-MinSlack,6.844,8.627,0,30,30,42.075
+"m=1, n=50",p & d & w similar,Random,6.959,10.424,0,30,30,42.075
+"m=4, n=40",none similar,WSPT,2.639,4.689,0,20,20,6.373
+"m=4, n=40",none similar,WSPT-EDD,2.639,4.689,0,20,20,6.373
+"m=4, n=40",none similar,MooreHodgson-W,3.301,6.489,0,20,20,6.373
+"m=4, n=40",none similar,Density-wpd,3.608,7.387,0,20,20,6.373
+"m=4, n=40",none similar,MaxWeight,3.629,8.159,0,20,20,6.373
+"m=4, n=40",none similar,MooreHodgson-U,11.99,18.328,0,20,20,6.373
+"m=4, n=40",none similar,SPT,11.729,17.435,0,20,20,6.373
+"m=4, n=40",none similar,EDD,11.284,18.108,0,20,20,6.373
+"m=4, n=40",none similar,Slack,17.481,31.233,0,20,20,6.373
+"m=4, n=40",none similar,MinSlack,28.606,40.03,0,20,20,6.373
+"m=4, n=40",none similar,LPT,39.524,53.08,0,20,20,6.373
+"m=4, n=40",none similar,WSPT-Congestion,2.906,5.127,0,20,20,6.373
+"m=4, n=40",none similar,WSPT-Laxity,3.012,4.901,0,20,20,6.373
+"m=4, n=40",none similar,Value-per-Slack,6.058,13.286,0,20,20,6.373
+"m=4, n=40",none similar,MH-Density,4.037,9.427,0,20,20,6.373
+"m=4, n=40",none similar,MH-MinSlack,36.721,48.096,0,20,20,6.373
+"m=4, n=40",none similar,Random,20.743,45.545,0,20,20,6.373
+"m=4, n=40",p similar,WSPT,1.736,3.317,0,20,15,7.428
+"m=4, n=40",p similar,WSPT-EDD,1.736,3.317,0,20,15,7.428
+"m=4, n=40",p similar,MooreHodgson-W,1.805,3.317,0,20,15,7.428
+"m=4, n=40",p similar,Density-wpd,2.704,6.092,0,20,15,7.428
+"m=4, n=40",p similar,MaxWeight,1.746,3.317,0,20,15,7.428
+"m=4, n=40",p similar,MooreHodgson-U,20.59,32.543,0,20,15,7.428
+"m=4, n=40",p similar,SPT,20.026,29.935,0,20,15,7.428
+"m=4, n=40",p similar,EDD,21.193,32.365,0,20,15,7.428
+"m=4, n=40",p similar,Slack,22.958,31.573,0,20,15,7.428
+"m=4, n=40",p similar,MinSlack,20.98,29.752,0,20,15,7.428
+"m=4, n=40",p similar,LPT,24.606,32.983,0,20,15,7.428
+"m=4, n=40",p similar,WSPT-Congestion,2.092,6.045,0,20,15,7.428
+"m=4, n=40",p similar,WSPT-Laxity,1.845,3.317,0,20,15,7.428
+"m=4, n=40",p similar,Value-per-Slack,3.033,6.56,0,20,15,7.428
+"m=4, n=40",p similar,MH-Density,2.828,6.092,0,20,15,7.428
+"m=4, n=40",p similar,MH-MinSlack,21.515,34.503,0,20,15,7.428
+"m=4, n=40",p similar,Random,23.417,29.217,0,20,15,7.428
+"m=4, n=40",d similar,WSPT,4.419,7.893,0,20,20,16.125
+"m=4, n=40",d similar,WSPT-EDD,4.419,7.893,0,20,20,16.125
+"m=4, n=40",d similar,MooreHodgson-W,5.745,9.067,0,20,20,16.125
+"m=4, n=40",d similar,Density-wpd,4.421,7.893,0,20,20,16.125
+"m=4, n=40",d similar,MaxWeight,7.83,16.634,0,20,20,16.125
+"m=4, n=40",d similar,MooreHodgson-U,16.31,26.772,0,20,20,16.125
+"m=4, n=40",d similar,SPT,15.967,24.725,0,20,20,16.125
+"m=4, n=40",d similar,EDD,24.076,36.099,0,20,20,16.125
+"m=4, n=40",d similar,Slack,18.411,34.33,0,20,20,16.125
+"m=4, n=40",d similar,MinSlack,52.664,65.479,0,20,20,16.125
+"m=4, n=40",d similar,LPT,54.764,65.436,0,20,20,16.125
+"m=4, n=40",d similar,WSPT-Congestion,5.687,10.712,0,20,20,16.125
+"m=4, n=40",d similar,WSPT-Laxity,4.551,9.53,0,20,20,16.125
+"m=4, n=40",d similar,Value-per-Slack,9.835,18.39,0,20,20,16.125
+"m=4, n=40",d similar,MH-Density,5.718,10.854,0,20,20,16.125
+"m=4, n=40",d similar,MH-MinSlack,61.944,73.753,0,20,20,16.125
+"m=4, n=40",d similar,Random,37.288,52.314,0,20,20,16.125
+"m=4, n=40",w similar,WSPT,3.647,6.222,0,20,20,14.207
+"m=4, n=40",w similar,WSPT-EDD,3.647,6.222,0,20,20,14.207
+"m=4, n=40",w similar,MooreHodgson-W,3.924,6.222,0,20,20,14.207
+"m=4, n=40",w similar,Density-wpd,4.3,6.905,0,20,20,14.207
+"m=4, n=40",w similar,MaxWeight,11.042,20.022,0,20,20,14.207
+"m=4, n=40",w similar,MooreHodgson-U,4.439,7.077,0,20,20,14.207
+"m=4, n=40",w similar,SPT,4.14,7.077,0,20,20,14.207
+"m=4, n=40",w similar,EDD,5.495,10.151,0,20,20,14.207
+"m=4, n=40",w similar,Slack,9.806,19.154,0,20,20,14.207
+"m=4, n=40",w similar,MinSlack,22.097,32.477,0,20,20,14.207
+"m=4, n=40",w similar,LPT,34.384,43.057,0,20,20,14.207
+"m=4, n=40",w similar,WSPT-Congestion,4.161,6.905,0,20,20,14.207
+"m=4, n=40",w similar,WSPT-Laxity,3.536,6.109,0,20,20,14.207
+"m=4, n=40",w similar,Value-per-Slack,19.975,29.094,0,20,20,14.207
+"m=4, n=40",w similar,MH-Density,4.746,6.905,0,20,20,14.207
+"m=4, n=40",w similar,MH-MinSlack,30.442,40.102,0,20,20,14.207
+"m=4, n=40",w similar,Random,12.188,21.879,0,20,20,14.207
+"m=4, n=40",p & d similar,WSPT,0.811,4.231,11,20,20,24.972
+"m=4, n=40",p & d similar,WSPT-EDD,0.811,4.231,11,20,20,24.972
+"m=4, n=40",p & d similar,MooreHodgson-W,0.811,4.231,11,20,20,24.972
+"m=4, n=40",p & d similar,Density-wpd,0.879,4.174,10,20,20,24.972
+"m=4, n=40",p & d similar,MaxWeight,0.687,3.831,15,20,20,24.972
+"m=4, n=40",p & d similar,MooreHodgson-U,32.096,45.955,0,20,20,24.972
+"m=4, n=40",p & d similar,SPT,32.241,48.466,0,20,20,24.972
+"m=4, n=40",p & d similar,EDD,32.284,51.079,0,20,20,24.972
+"m=4, n=40",p & d similar,Slack,33.674,50.884,0,20,20,24.972
+"m=4, n=40",p & d similar,MinSlack,31.91,49.928,0,20,20,24.972
+"m=4, n=40",p & d similar,LPT,33.259,51.007,0,20,20,24.972
+"m=4, n=40",p & d similar,WSPT-Congestion,2.628,7.252,0,20,20,24.972
+"m=4, n=40",p & d similar,WSPT-Laxity,0.834,4.231,10,20,20,24.972
+"m=4, n=40",p & d similar,Value-per-Slack,0.866,3.888,5,20,20,24.972
+"m=4, n=40",p & d similar,MH-Density,0.879,4.174,10,20,20,24.972
+"m=4, n=40",p & d similar,MH-MinSlack,32.407,48.489,0,20,20,24.972
+"m=4, n=40",p & d similar,Random,32.686,47.063,0,20,20,24.972
+"m=4, n=40",p & w similar,WSPT,3.786,6.914,0,20,12,22.857
+"m=4, n=40",p & w similar,WSPT-EDD,3.786,6.914,0,20,12,22.857
+"m=4, n=40",p & w similar,MooreHodgson-W,3.769,6.523,0,20,12,22.857
+"m=4, n=40",p & w similar,Density-wpd,5.437,8.464,0,20,12,22.857
+"m=4, n=40",p & w similar,MaxWeight,4.668,8.374,0,20,12,22.857
+"m=4, n=40",p & w similar,MooreHodgson-U,4.865,7.855,0,20,12,22.857
+"m=4, n=40",p & w similar,SPT,5.039,7.855,0,20,12,22.857
+"m=4, n=40",p & w similar,EDD,6.881,12.397,0,20,12,22.857
+"m=4, n=40",p & w similar,Slack,6.96,9.078,0,20,12,22.857
+"m=4, n=40",p & w similar,MinSlack,7.759,12.397,0,20,12,22.857
+"m=4, n=40",p & w similar,LPT,9.88,14.242,0,20,12,22.857
+"m=4, n=40",p & w similar,WSPT-Congestion,4.375,7.649,0,20,12,22.857
+"m=4, n=40",p & w similar,WSPT-Laxity,3.845,7.542,0,20,12,22.857
+"m=4, n=40",p & w similar,Value-per-Slack,6.168,10.299,0,20,12,22.857
+"m=4, n=40",p & w similar,MH-Density,5.447,8.464,0,20,12,22.857
+"m=4, n=40",p & w similar,MH-MinSlack,7.69,12.397,0,20,12,22.857
+"m=4, n=40",p & w similar,Random,6.731,9.805,0,20,12,22.857
+"m=4, n=40",d & w similar,WSPT,4.198,7.614,0,20,20,27.453
+"m=4, n=40",d & w similar,WSPT-EDD,4.198,7.614,0,20,20,27.453
+"m=4, n=40",d & w similar,MooreHodgson-W,4.727,7.78,0,20,20,27.453
+"m=4, n=40",d & w similar,Density-wpd,3.995,6.804,0,20,20,27.453
+"m=4, n=40",d & w similar,MaxWeight,20.86,38.589,0,20,20,27.453
+"m=4, n=40",d & w similar,MooreHodgson-U,4.296,7.216,0,20,20,27.453
+"m=4, n=40",d & w similar,SPT,4.183,6.804,0,20,20,27.453
+"m=4, n=40",d & w similar,EDD,13.834,22.398,0,20,20,27.453
+"m=4, n=40",d & w similar,Slack,7.491,12.044,0,20,20,27.453
+"m=4, n=40",d & w similar,MinSlack,43.854,55.992,0,20,20,27.453
+"m=4, n=40",d & w similar,LPT,49.208,59.463,0,20,20,27.453
+"m=4, n=40",d & w similar,WSPT-Congestion,6.071,11.064,0,20,20,27.453
+"m=4, n=40",d & w similar,WSPT-Laxity,4.229,7.614,0,20,20,27.453
+"m=4, n=40",d & w similar,Value-per-Slack,41.857,51.591,0,20,20,27.453
+"m=4, n=40",d & w similar,MH-Density,4.658,7.216,0,20,20,27.453
+"m=4, n=40",d & w similar,MH-MinSlack,56.198,62.886,0,20,20,27.453
+"m=4, n=40",d & w similar,Random,22.232,27.87,0,20,20,27.453
+"m=4, n=40",p & d & w similar,WSPT,2.114,5.78,0,20,20,47.281
+"m=4, n=40",p & d & w similar,WSPT-EDD,2.077,5.78,0,20,20,47.281
+"m=4, n=40",p & d & w similar,MooreHodgson-W,2.247,5.78,0,20,20,47.281
+"m=4, n=40",p & d & w similar,Density-wpd,2.579,6.29,1,20,20,47.281
+"m=4, n=40",p & d & w similar,MaxWeight,0.552,4.037,17,20,20,47.281
+"m=4, n=40",p & d & w similar,MooreHodgson-U,4.952,8.022,0,20,20,47.281
+"m=4, n=40",p & d & w similar,SPT,4.896,7.85,0,20,20,47.281
+"m=4, n=40",p & d & w similar,EDD,5.123,8.991,0,20,20,47.281
+"m=4, n=40",p & d & w similar,Slack,5.13,7.931,0,20,20,47.281
+"m=4, n=40",p & d & w similar,MinSlack,5.166,9.207,0,20,20,47.281
+"m=4, n=40",p & d & w similar,LPT,5.278,9.572,0,20,20,47.281
+"m=4, n=40",p & d & w similar,WSPT-Congestion,4.235,8.165,0,20,20,47.281
+"m=4, n=40",p & d & w similar,WSPT-Laxity,2.199,5.78,0,20,20,47.281
+"m=4, n=40",p & d & w similar,Value-per-Slack,2.587,6.422,0,20,20,47.281
+"m=4, n=40",p & d & w similar,MH-Density,2.593,6.29,1,20,20,47.281
+"m=4, n=40",p & d & w similar,MH-MinSlack,5.227,9.207,0,20,20,47.281
+"m=4, n=40",p & d & w similar,Random,5.117,9.358,0,20,20,47.281

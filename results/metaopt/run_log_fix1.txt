@@ -1,0 +1,2 @@
+narrow R=0.1   WSPT-Laxity  gap  30.00%  lost 24 vs opt 18  cause=ranking  verified=True proved=False  (240s, 1133 vars)
+many machines  WSPT-Laxity  gap   0.00%  lost 9 vs opt 9  cause=ranking  verified=True proved=False  (1684s, 1295 vars)

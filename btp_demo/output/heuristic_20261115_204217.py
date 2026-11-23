@@ -1,0 +1,26 @@
+"""Heuristic for Pm | r=0 | sum w U  (live: groq:openai/gpt-oss-120b, answered in 2s)
+
+Idea: Combine WSPT with urgency for priority and pick the feasible machine that maximizes slack‑after normalized by its current load, thus favoring valuable tight jobs while keeping machines balanced.
+"""
+import math
+
+import numpy as np
+
+
+def priority(f, c):
+    # WSPT (w/p) boosted for jobs with high urgency (p/d)
+    # urgency close to 1 means a tight deadline, so we give it extra weight
+    return f["wp"] * (1.0 + f["urgency"])
+
+
+def choose_machine(i, f, c, M):
+    # Score only feasible machines (M["fits"] is True)
+    # Higher slack after is good, but we also prefer less‑loaded machines
+    # Adding a tiny epsilon avoids division by zero on empty machines
+    eps = 1e-9
+    scores = np.where(
+        M["fits"],
+        M["slack_after"] / (M["load"] + eps),
+        -np.inf   # infeasible machines get the worst score
+    )
+    return scores

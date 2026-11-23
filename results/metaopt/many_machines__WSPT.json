@@ -1,0 +1,98 @@
+{
+ "family": "many machines",
+ "encoded_rule": "WSPT",
+ "n": 6,
+ "m": 3,
+ "p": [
+  20.0,
+  40.0,
+  80.0,
+  80.0,
+  20.0,
+  80.0
+ ],
+ "d": [
+  80.0,
+  81.0,
+  82.0,
+  83.0,
+  84.0,
+  85.0
+ ],
+ "w": [
+  1.0,
+  10.0,
+  7.0,
+  5.0,
+  7.0,
+  10.0
+ ],
+ "total_w": 40.0,
+ "solver_status": 1,
+ "solver_proved": false,
+ "solve_seconds": 240.0,
+ "opt_lost": 5.0,
+ "opt_proved": true,
+ "opt_keep": [
+  true,
+  true,
+  true,
+  false,
+  true,
+  true
+ ],
+ "opt_assign": {
+  "0": 2,
+  "1": 2,
+  "2": 0,
+  "4": 2,
+  "5": 1
+ },
+ "rules": {
+  "WSPT": {
+   "lost": 13.0,
+   "keep": [
+    false,
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "gap_pct": 22.857142857142858,
+   "ratio": 2.6
+  },
+  "WSPT-EDD": {
+   "lost": 13.0,
+   "keep": [
+    false,
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "gap_pct": 22.857142857142858,
+   "ratio": 2.6
+  },
+  "WSPT-Laxity": {
+   "lost": 13.0,
+   "keep": [
+    false,
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "gap_pct": 22.857142857142858,
+   "ratio": 2.6
+  }
+ },
+ "encoding_verified": true,
+ "encoded_opt_is_optimal": true,
+ "encoded_heuristic_lost": 13.0,
+ "encoded_opt_lost": 5.0,
+ "opt_set_passes_decoder_test": false,
+ "cause": "decoder"
+}

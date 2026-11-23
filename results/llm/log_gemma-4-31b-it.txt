@@ -1,0 +1,71 @@
+  self-check passed (decoder matches the GA's assignment decoder)
+  training: 12 instances, WSPT mean gap 4.183%
+  test: adversarial (24), similarity m=1 (40), similarity m=4 (40), benchmark (24)
+
+== gemma-4-31b-it ==
+    gen 0 seed: gap  3.503%  WSPT priority (weight per unit of processing time); the job goes on th
+    gen 0 i1: gap  4.849%  Prioritize jobs with high weight-to-processing-time ratio and early de
+    gen 0 i1: gap  5.936%  Prioritize jobs with high weight-to-processing-time ratios and early d
+    gen 0 i1: gap  4.110%  Prioritize jobs based on a combination of weight-to-processing-time ra
+    gen 0 i1: gap  4.110%  Prioritize jobs by weight density adjusted for urgency, then place eac
+    [gemma-4-31b-it] HTTP 500, retrying in 15s
+    [gemma-4-31b-it] HTTP 503, retrying in 30s
+    gen 0 i1: gap  4.110%  Prioritize jobs by combining weight density and urgency, then assign t
+    gen 1 e1: gap  4.355%  Prioritize jobs by weighting their value density against the available
+    gen 1 e2: gap  4.957%  Prioritize jobs by weight density and assign them to the machine that 
+    [gemma-4-31b-it] HTTP 500, retrying in 15s
+    [gemma-4-31b-it] HTTP 500, retrying in 30s
+    [gemma-4-31b-it] HTTP 503, retrying in 60s
+    gen 1 m1: gap  5.002%  Prioritize jobs with high weight-to-processing-time ratios and early d
+    gen 1 m2: gap  4.678%  Prioritize jobs by increasing the penalty for available headroom using
+  generation 1: best 3.503%  (9 calls)
+    [gemma-4-31b-it] HTTP 500, retrying in 15s
+    [gemma-4-31b-it] HTTP 500, retrying in 30s
+    gen 2 e1: failed  RuntimeError: <urlopen error [Errno 11001] getaddrinfo failed>
+    gen 2 e2: failed  RuntimeError: <urlopen error [Errno 11001] getaddrinfo failed>
+    gen 2 m1: gap  4.147%  Use WSPT priority to focus on high-weight, short-processing jobs, and 
+    gen 2 m2: gap  4.258%  Prioritize jobs with a higher weight-to-processing-time ratio and a st
+  generation 2: best 3.503%  (11 calls)
+    gen 3 e1: gap  4.364%  Prioritize jobs using the weight-to-processing-time ratio scaled by an
+    gen 3 e2: gap  4.094%  Prioritize jobs by balancing their weight-to-processing-time ratio aga
+    gen 3 m1: gap  3.470%  Use WSPT priority to focus on high-value jobs and a Best-Fit machine s
+    gen 3 m2: failed  ValueError: duplicate of an earlier heuristic
+  generation 3: best 3.470%  (15 calls)
+    [gemma-4-31b-it] HTTP 500, retrying in 15s
+    gen 4 e1: gap  4.857%  Prioritize jobs by their weight-to-area density (weight divided by the
+    [gemma-4-31b-it] HTTP 503, retrying in 15s
+    [gemma-4-31b-it] HTTP 500, retrying in 30s
+    [gemma-4-31b-it] HTTP 500, retrying in 60s
+    gen 4 e2: gap  3.497%  Use WSPT priority to focus on high-value, short jobs and select the ma
+    [gemma-4-31b-it] HTTP 500, retrying in 15s
+    gen 4 m1: gap  4.277%  Prioritize jobs using a weighted combination of their weight-to-proces
+    gen 4 m2: gap  3.944%  Increase the weight of the urgency component in the priority score to 
+  generation 4: best 3.470%  (19 calls)
+    gen 5 e1: gap  4.301%  Prioritize jobs with the highest weight-to-processing-time-deadline de
+    gen 5 e2: gap  5.388%  Prioritize jobs by balancing their value density with their deadline u
+    gen 5 m1: failed  ValueError: duplicate of an earlier heuristic
+    [gemma-4-31b-it] HTTP 500, retrying in 15s
+    gen 5 m2: failed  RemoteDisconnected: Remote end closed connection without response
+  generation 5: best 3.470%  (22 calls)
+    [gemma-4-31b-it] HTTP 503, retrying in 30s
+    [gemma-4-31b-it] HTTP 503, retrying in 60s
+    gen 6 e1: failed  RemoteDisconnected: Remote end closed connection without response
+    [gemma-4-31b-it] HTTP 503, retrying in 15s
+    [gemma-4-31b-it] HTTP 500, retrying in 30s
+    [gemma-4-31b-it] HTTP 500, retrying in 60s
+    [gemma-4-31b-it] HTTP 503, retrying in 120s
+    [gemma-4-31b-it] HTTP 503, retrying in 240s
+    gen 6 e2: failed  RuntimeError: HTTP 500: {
+  "error": {
+    "code": 500,
+    "message": "Internal error enc
+    gen 6 m1: gap  4.219%  Use a hybrid priority that balances weighted processing time (WSPT) an
+    [gemma-4-31b-it] HTTP 500, retrying in 15s
+    gen 6 m2: failed  ValueError: duplicate of an earlier heuristic
+  generation 6: best 3.470%  (24 calls)
+  test adversarial     WSPT  20.62  best_rule   8.21  seed  13.55  WSPT_bestfit  13.55  LLM  13.55  GA_joint   0.00
+  test similarity m=1  WSPT   0.31  best_rule   0.22  seed   0.31  WSPT_bestfit   0.31  LLM   0.31  GA_joint   0.01
+  test similarity m=4  WSPT   2.90  best_rule   2.31  seed   2.85  WSPT_bestfit   2.74  LLM   2.72  GA_joint   0.38
+  test benchmark       WSPT   1.91  best_rule   1.79  seed   1.77  WSPT_bestfit   1.74  LLM   1.75  GA_joint   0.89
+
+results -> D:\Lelouch\BTP\Code\results\llm

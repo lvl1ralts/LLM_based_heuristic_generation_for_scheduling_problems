@@ -1,0 +1,2 @@
+large n        WSPT         gap  22.50%  lost 30 vs opt 21  cause=ranking  verified=True proved=False  (240s, 745 vars)
+large n        WSPT-Laxity  gap   0.00%  lost 11 vs opt 11  cause=ranking  verified=True proved=False  (1684s, 1435 vars)

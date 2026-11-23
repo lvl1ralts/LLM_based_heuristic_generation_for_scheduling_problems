@@ -1,0 +1,10 @@
+{
+ "source": "live: groq:openai/gpt-oss-120b, answered in 2s",
+ "idea": "Prioritize jobs by weight\u2011per\u2011time boosted by how lax they are, and place each job on the feasible machine that keeps the largest slack while also staying light on load.",
+ "code": "def priority(f, c):\n    # high wp (weight/processing) and high laxity (more slack) are desirable\n    return f[\"wp\"] * f[\"laxity\"]\n\n\ndef choose_machine(i, f, c, M):\n    # raw slack after adding the job\n    slack = M[\"slack_after\"]\n    # projected load on the machine if the job is placed there\n    proj_load = M[\"load\"] + f[\"p\"][i]\n    # score = slack minus a small penalty proportional to the resulting load\n    score = slack - proj_load / c[\"max_d\"]\n    # infeasible machines get worst possible score\n    score = np.where(M[\"fits\"], score, -np.inf)\n    return score",
+ "lost": 11.0,
+ "wspt_lost": 11.0,
+ "opt_lost": 1.0,
+ "train_gap": 4.592760712551143,
+ "train_gap_wspt": 4.183242253844033
+}

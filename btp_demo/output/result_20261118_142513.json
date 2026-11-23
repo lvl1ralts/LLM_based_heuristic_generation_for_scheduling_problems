@@ -1,0 +1,10 @@
+{
+ "source": "live: groq:openai/gpt-oss-120b, answered in 3s",
+ "idea": "Combine weight density with urgency for priority and select the feasible machine that maximizes remaining slack while penalizing high load to improve balance.",
+ "code": "def priority(f, c):\n    # Higher score for jobs that are heavy, short and have tight deadlines (high density)\n    # and also for jobs that are urgent (large p/d). Multiplying combines both effects.\n    return f[\"dens\"] * (1 + f[\"urgency\"])\n\n\ndef choose_machine(i, f, c, M):\n    # Load on each machine after adding job i\n    load_after = M[\"load\"] + f[\"p\"][i]\n\n    # Normalised load (larger load \u2192 lower desirability)\n    norm_load = load_after / c[\"max_d\"]\n\n    # Score: remaining slack minus a fraction of the normalised load\n    alpha = 0.5\n    scores = M[\"slack_after\"] - alpha * norm_load\n\n    # Infeasible machines have slack_after == -1; give them -inf so they are never chosen\n    scores = np.where(M[\"slack_after\"] >= 0, scores, -np.inf)\n\n    return scores",
+ "lost": 11.0,
+ "wspt_lost": 11.0,
+ "opt_lost": 1.0,
+ "train_gap": 4.2828875369561334,
+ "train_gap_wspt": 4.183242253844033
+}

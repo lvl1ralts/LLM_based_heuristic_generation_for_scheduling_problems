@@ -1,0 +1,48 @@
+  self-check passed (decoder matches the GA's assignment decoder)
+  training: 12 instances, WSPT mean gap 4.183%
+  test: adversarial (24), similarity m=1 (40), similarity m=4 (40), benchmark (24)
+
+== groq_openai_gpt-oss-120b ==
+    gen 0 seed: gap  3.503%  WSPT priority (weight per unit of processing time); the job goes on th
+    gen 0 i1: failed  ValueError: not allowed: Import
+    gen 0 i1: gap  4.939%  Prioritize jobs by weight × laxity per unit processing time, and assig
+    gen 0 i1: gap  4.887%  Prioritize jobs by weight‑adjusted slack per unit time and place each 
+    gen 0 i1: gap  4.057%  Prioritize jobs that are heavy‑weight per time, urgent, and have littl
+    gen 0 i1: gap 11.656%  Combine weight‑per‑time with deadline urgency for job ordering, and as
+    gen 0 i1: gap  6.144%  Prioritize jobs with high weight‑per‑time that are due early, and assi
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 7s
+    gen 1 e1: gap  4.636%  Prioritize heavy jobs that belong to tightly‑scheduled periods (low he
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 12s
+    gen 1 e2: gap  5.113%  Score jobs by weight efficiency amplified by remaining system headroom
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 6s
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 3s
+    gen 1 m1: failed  ValueError: not allowed: Import
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 12s
+    gen 1 m2: gap  4.860%  Add headroom‑aware weighted laxity to the priority and balance slack, 
+  generation 1: best 3.503%  (10 calls)
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 8s
+    gen 2 e1: gap  5.181%  Prioritize jobs with a high weight‑to‑slack ratio and early deadlines,
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 18s
+    gen 2 e2: gap  5.785%  Prioritize jobs by a weight‑per‑time measure tempered by how tight the
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 9s
+    gen 2 m1: gap  4.149%  Assign a job to the feasible machine that leaves the most slack after 
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 6s
+    gen 2 m2: gap  4.710%  Add normalized weight, inverse slack, early deadline and urgency compo
+  generation 2: best 3.503%  (14 calls)
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 8s
+    gen 3 e1: gap  6.030%  Prioritize jobs that are dense in weight per unit of processing‑time‑d
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 9s
+    gen 3 e2: gap  5.166%  Use a density‑based priority that also rewards laxity and instance hea
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 8s
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 2s
+    gen 3 m1: gap  3.921%  Improve priority by combining weight, weight‑per‑processing, tight hea
+    [groq_openai_gpt-oss-120b] HTTP 429, retrying in 4s
+    gen 3 m2: gap  4.278%  Combine normalized weight‑per‑time, urgency, headroom and laxity while
+  generation 3: best 3.503%  (18 calls)
+  stopping after generation 3: 18 calls (--max-calls)
+  test adversarial     WSPT  20.62  best_rule   8.21  seed  13.55  WSPT_bestfit  13.55  LLM  13.55  GA_joint   0.00
+  test similarity m=1  WSPT   0.31  best_rule   0.22  seed   0.31  WSPT_bestfit   0.31  LLM   0.31  GA_joint   0.01
+  test similarity m=4  WSPT   2.90  best_rule   2.31  seed   2.85  WSPT_bestfit   2.74  LLM   2.85  GA_joint   0.38
+  test benchmark       WSPT   1.91  best_rule   1.79  seed   1.77  WSPT_bestfit   1.74  LLM   1.77  GA_joint   0.89
+
+results -> D:\Lelouch\BTP\Code\results\llm

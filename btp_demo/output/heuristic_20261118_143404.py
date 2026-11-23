@@ -1,0 +1,22 @@
+"""Heuristic for Pm | r=0 | sum w U  (live: groq:openai/gpt-oss-120b, answered in 3s)
+
+Idea: Prioritize jobs by weight‑per‑processing amplified by urgency, and assign each job to the feasible machine that keeps high slack while also favouring less‑loaded machines.
+"""
+import math
+
+import numpy as np
+
+
+def priority(f, c):
+    # weight per processing time, boosted for urgent (tight‑deadline) jobs
+    return f["wp"] * (1.0 + f["urgency"])
+
+
+def choose_machine(i, f, c, M):
+    # score = remaining slack after placement minus a small load penalty
+    # (higher score → better machine). Infeasible machines have slack_after = -1.
+    load_norm = M["load"] / c["max_d"]          # normalise load by max deadline
+    scores = M["slack_after"] - 0.1 * load_norm
+    # ensure infeasible machines get the worst possible score
+    scores = np.where(M["slack_after"] >= 0, scores, -np.inf)
+    return scores

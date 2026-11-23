@@ -1,0 +1,25 @@
+family,built_against,n,m,total_w,opt_lost,cause,search_proved_worst,encoding_verified,tags,WSPT_lost,WSPT_gap,WSPT-EDD_lost,WSPT-EDD_gap,WSPT-Laxity_lost,WSPT-Laxity_gap
+bimodal p,WSPT,6,2,27.0,4.0,ranking,False,True,blocker holds capacity before the victim's deadline; low-value job ranked ahead of high-value job; ranking; several jobs traded,18.0,60.87,18.0,60.87,18.0,60.87
+bimodal p,WSPT-Laxity,6,2,57.0,20.0,decoder,False,True,decoder; earliest-free placement fragments machine capacity; long job must sit alone on a machine,27.0,18.92,27.0,18.92,27.0,18.92
+in-dist,WSPT,6,2,45.0,7.0,decoder,False,True,decoder; earliest-free placement fragments machine capacity; long job must sit alone on a machine,17.0,26.32,17.0,26.32,17.0,26.32
+in-dist,WSPT-Laxity,6,2,54.0,10.0,decoder,False,True,decoder; earliest-free placement fragments machine capacity; long job must sit alone on a machine,17.0,15.91,17.0,15.91,17.0,15.91
+large n,WSPT,10,1,61.0,21.0,ranking,False,True,low-value job ranked ahead of high-value job; ranking,30.0,22.5,30.0,22.5,30.0,22.5
+large n,WSPT-Laxity,10,1,61.0,11.0,ranking,False,True,ranking,11.0,0.0,11.0,0.0,11.0,0.0
+lognormal p,WSPT,6,2,37.0,1.0,decoder,False,True,decoder; earliest-free placement fragments machine capacity; long job must sit alone on a machine,11.0,27.78,11.0,27.78,11.0,27.78
+lognormal p,WSPT-Laxity,6,2,53.0,33.0,ranking,False,True,ranking,33.0,0.0,33.0,0.0,33.0,0.0
+loose T=0.1,WSPT,6,2,36.0,0.0,decoder,False,True,decoder; earliest-free placement fragments machine capacity; long job must sit alone on a machine,10.0,27.78,10.0,27.78,10.0,27.78
+loose T=0.1,WSPT-Laxity,6,2,53.0,0.0,decoder,False,True,decoder; earliest-free placement fragments machine capacity; long job must sit alone on a machine,3.0,5.66,3.0,5.66,10.0,18.87
+many machines,WSPT,6,3,40.0,5.0,decoder,False,True,decoder; earliest-free placement fragments machine capacity; long job must sit alone on a machine,13.0,22.86,13.0,22.86,13.0,22.86
+many machines,WSPT-Laxity,6,3,33.0,9.0,ranking,False,True,ranking,9.0,0.0,9.0,0.0,9.0,0.0
+narrow R=0.1,WSPT,6,2,34.0,4.0,decoder,False,True,decoder; earliest-free placement fragments machine capacity; long job must sit alone on a machine,14.0,33.33,14.0,33.33,14.0,33.33
+narrow R=0.1,WSPT-Laxity,6,2,38.0,18.0,ranking,False,True,blocker holds capacity before the victim's deadline; low-value job ranked ahead of high-value job; ranking; several jobs traded,24.0,30.0,24.0,30.0,24.0,30.0
+scale-shift,WSPT,8,2,43.0,5.0,decoder,False,True,decoder; earliest-free placement fragments machine capacity; long job must sit alone on a machine,6.0,2.63,6.0,2.63,6.0,2.63
+scale-shift,WSPT-Laxity,8,2,49.0,13.0,ranking,False,True,blocker holds capacity before the victim's deadline; low-value job ranked ahead of high-value job; ranking,15.0,5.56,15.0,5.56,15.0,5.56
+single m=1,WSPT,8,1,46.0,11.0,ranking,False,True,low-value job ranked ahead of high-value job; ranking,20.0,25.71,20.0,25.71,20.0,25.71
+single m=1,WSPT-Laxity,8,1,52.0,5.0,ranking,False,True,blocker holds capacity before the victim's deadline; low-value job ranked ahead of high-value job; ranking; several jobs traded,11.0,12.77,11.0,12.77,11.0,12.77
+tight T=0.8,WSPT,8,1,44.0,10.0,ranking,False,True,low-value job ranked ahead of high-value job; ranking,19.0,26.47,19.0,26.47,19.0,26.47
+tight T=0.8,WSPT-Laxity,8,1,52.0,28.0,ranking,False,True,blocker holds capacity before the victim's deadline; ranking; several jobs traded,32.0,16.67,32.0,16.67,32.0,16.67
+w anticorr,WSPT,6,2,63.0,7.0,decoder,False,True,decoder; earliest-free placement fragments machine capacity; long job must sit alone on a machine,17.0,17.86,17.0,17.86,17.0,17.86
+w anticorr,WSPT-Laxity,6,2,33.0,5.0,decoder,False,True,decoder; earliest-free placement fragments machine capacity; long job must sit alone on a machine,9.0,14.29,9.0,14.29,9.0,14.29
+w correlated,WSPT,6,2,59.0,21.0,decoder,False,True,decoder; earliest-free placement fragments machine capacity; long job must sit alone on a machine,37.0,42.11,37.0,42.11,37.0,42.11
+w correlated,WSPT-Laxity,6,2,64.0,23.0,ranking,False,True,blocker holds capacity before the victim's deadline; low-value job ranked ahead of high-value job; ranking; several jobs traded,39.0,39.02,39.0,39.02,39.0,39.02

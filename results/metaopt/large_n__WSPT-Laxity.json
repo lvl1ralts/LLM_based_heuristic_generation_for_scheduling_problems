@@ -1,0 +1,126 @@
+{
+ "family": "large n",
+ "encoded_rule": "WSPT-Laxity",
+ "n": 10,
+ "m": 1,
+ "p": [
+  100.0,
+  80.0,
+  100.0,
+  60.0,
+  100.0,
+  100.0,
+  100.0,
+  80.0,
+  100.0,
+  20.0
+ ],
+ "d": [
+  168.0,
+  189.0,
+  230.0,
+  250.0,
+  271.0,
+  291.0,
+  312.0,
+  332.0,
+  598.0,
+  639.0
+ ],
+ "w": [
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  7.0,
+  10.0,
+  10.0,
+  10.0,
+  10.0,
+  10.0
+ ],
+ "total_w": 61.0,
+ "solver_status": 1,
+ "solver_proved": false,
+ "solve_seconds": 1684.2,
+ "opt_lost": 11.0,
+ "opt_proved": true,
+ "opt_keep": [
+  false,
+  false,
+  false,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "opt_assign": {
+  "5": 0,
+  "6": 0,
+  "7": 0,
+  "8": 0,
+  "9": 0
+ },
+ "rules": {
+  "WSPT": {
+   "lost": 11.0,
+   "keep": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "gap_pct": 0.0,
+   "ratio": 1.0
+  },
+  "WSPT-EDD": {
+   "lost": 11.0,
+   "keep": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "gap_pct": 0.0,
+   "ratio": 1.0
+  },
+  "WSPT-Laxity": {
+   "lost": 11.0,
+   "keep": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "gap_pct": 0.0,
+   "ratio": 1.0
+  }
+ },
+ "encoding_verified": true,
+ "encoded_opt_is_optimal": true,
+ "encoded_heuristic_lost": 11.0,
+ "encoded_opt_lost": 11.0,
+ "opt_set_passes_decoder_test": true,
+ "cause": "ranking"
+}

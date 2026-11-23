@@ -1,0 +1,10 @@
+{
+ "source": "live: groq:openai/gpt-oss-120b, answered in 2s",
+ "idea": "Combine weight\u2011per\u2011processing with urgency for priority and choose the machine that maximizes slack after while penalizing already loaded machines, thus balancing flexibility and load.",
+ "code": "def priority(f, c):\n    # high wp jobs that are also urgent (short deadline) get higher scores\n    return f[\"wp\"] * (1.0 + f[\"urgency\"])\n\n\ndef choose_machine(i, f, c, M):\n    # score = slack after / (1 + normalized load)\n    # higher slack is good, but heavily loaded machines are penalized\n    load_norm = M[\"load\"] / c[\"max_d\"]            # normalise load\n    scores = M[\"slack_after\"] / (1.0 + load_norm) # higher is better\n    # ensure non\u2011feasible machines are never chosen\n    scores = np.where(M[\"fits\"], scores, -np.inf)\n    return scores",
+ "lost": 11.0,
+ "wspt_lost": 11.0,
+ "opt_lost": 1.0,
+ "train_gap": 4.810666775636435,
+ "train_gap_wspt": 4.183242253844033
+}

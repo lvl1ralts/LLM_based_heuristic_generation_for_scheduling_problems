@@ -1,0 +1,10 @@
+{
+ "source": "live: groq:qwen/qwen3.8-27b, answered in 1s",
+ "idea": "Combine WSPT priority with a machine selection strategy that prioritizes machines where the job's placement leaves the highest surplus time before the minimum deadline conflict, balancing immediate fit and future flexibility by using the difference between slack_after and the current machine load to favor machines with more headroom.",
+ "code": "def priority(f, c):\n    return f[\"wp\"]\n\ndef choose_machine(i, f, c, M):\n    # Favor machines where adding job i leaves more relative slack compared to current load\n    # Normalize slack_after by current load to account for different load levels\n    loads = M[\"load\"] + 1e-6  # Avoid division by zero\n    slack_ratio = M[\"slack_after\"] / loads\n    return slack_ratio",
+ "lost": 11.0,
+ "wspt_lost": 11.0,
+ "opt_lost": 1.0,
+ "train_gap": 3.654863370541968,
+ "train_gap_wspt": 4.183242253844033
+}

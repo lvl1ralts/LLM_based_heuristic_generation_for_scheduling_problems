@@ -1,0 +1,25 @@
+{Combine weight‑per‑processing with deadline tightness for priority and choose the feasible machine that maximises a slack‑adjusted load‑efficiency score to keep future flexibility.}
+
+```python
+import numpy as np
+
+def priority(f, c):
+    # wp = w/p  (high weight, short job)
+    # laxity = (d-p)/d  (close to 0 → tight deadline)
+    # Use wp boosted for tight deadlines
+    tight_factor = 1.0 - f["laxity"]          # larger for tighter jobs
+    return f["wp"] + 0.5 * tight_factor       # simple weighted sum
+
+
+def choose_machine(i, f, c, M):
+    # Only machines where the job fits have valid slack_after (>=0)
+    # Score = slack_after / (current load + processing time)
+    # This favours machines that stay slacky and are not already overloaded.
+    proc = f["p"][i]
+    load_after = M["load"] + proc
+    # Avoid division by zero; slack_after is -1 where not feasible
+    feasible = M["slack_after"] >= 0
+    score = np.full_like(M["slack_after"], -np.inf, dtype=float)
+    score[feasible] = M["slack_after"][feasible] / load_after[feasible]
+    return score
+```

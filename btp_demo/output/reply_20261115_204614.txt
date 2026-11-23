@@ -1,0 +1,22 @@
+{Combine weight‑per‑time with urgency and instance headroom for priority, and pick the feasible machine that gives the largest slack after while penalising already loaded machines.} 
+
+```python
+def priority(f, c):
+    # weight per processing time
+    wp = f["wp"]
+    # urgency: short deadline relative to processing time
+    urg = f["urgency"]
+    # normalized headroom of the whole instance (more slack → higher score)
+    hr = f["headroom_norm"]
+    # combine: give extra boost to urgent jobs when overall headroom is large
+    return wp * (1.0 + urg) * (1.0 + hr)
+
+
+def choose_machine(i, f, c, M):
+    # slack after placing the job (−1 where it does not fit)
+    slack = M["slack_after"]
+    # current load of the machine (total processing time already assigned)
+    load = M["load"]
+    # reward slack, penalise load; machines that do not fit stay low (‑1‑load)
+    return slack - 0.3 * load
+```

@@ -1,0 +1,10 @@
+{
+ "source": "live: groq:openai/gpt-oss-120b, answered in 2s",
+ "idea": "Combine the WSPT priority with a machine\u2011selection score that balances the resulting slack and current load, preferring machines that keep high slack while staying load\u2011balanced.",
+ "code": "def priority(f, c):\n    # keep the effective WSPT order\n    return f[\"wp\"]\n\n\ndef choose_machine(i, f, c, M):\n    # score = slack after placement, penalised by current load\n    # non\u2011feasible machines have slack_after = -1, give them -inf score\n    slack = M[\"slack_after\"]\n    load = M[\"load\"]\n    score = np.where(slack > -1,\n                     slack * 1.0 / (1.0 + load),   # higher slack, lower load = better\n                     -np.inf)\n    return score",
+ "lost": 11.0,
+ "wspt_lost": 11.0,
+ "opt_lost": 1.0,
+ "train_gap": 3.49707109918392,
+ "train_gap_wspt": 4.183242253844033
+}

@@ -1,0 +1,37 @@
+{
+ "name": "lognormal_p__WSPT",
+ "source": "MetaOpt adversarial instance (lognormal job lengths family), built against WSPT",
+ "m": 2,
+ "p": [
+  3.0,
+  50.0,
+  3.0,
+  20.0,
+  120.0,
+  120.0
+ ],
+ "d": [
+  120.0,
+  121.0,
+  122.0,
+  123.0,
+  124.0,
+  125.0
+ ],
+ "w": [
+  1.0,
+  10.0,
+  5.0,
+  10.0,
+  1.0,
+  10.0
+ ],
+ "opt_lost": 1.0,
+ "opt_assign": {
+  "0": 1,
+  "1": 1,
+  "2": 0,
+  "3": 1,
+  "5": 0
+ }
+}

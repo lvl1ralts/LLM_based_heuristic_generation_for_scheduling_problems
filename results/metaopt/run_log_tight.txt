@@ -1,0 +1,2 @@
+tight T=0.8    WSPT         gap  26.47%  lost 19 vs opt 10  cause=ranking  verified=True proved=False  (240s, 533 vars)
+tight T=0.8    WSPT-Laxity  gap  16.67%  lost 32 vs opt 28  cause=ranking  verified=True proved=False  (240s, 893 vars)

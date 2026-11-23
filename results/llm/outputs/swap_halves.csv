@@ -1,0 +1,14 @@
+variant,family,adversarial,similarity m=1,similarity m=4
+seed (WSPT + first fit),1.65,13.551,0.314,2.846
+Gemini 3.8 Flash: own priority + first fit,1.656,12.926,0.371,2.866
+Gemini 3.8 Flash: WSPT + own placement,1.634,13.551,0.314,2.721
+Gemini 3.8 Flash: both (as written),1.658,12.926,0.371,2.758
+Gemma 4 31B: own priority + first fit,1.65,13.551,0.314,2.846
+Gemma 4 31B: WSPT + own placement,1.634,13.551,0.314,2.721
+Gemma 4 31B: both (as written),1.634,13.551,0.314,2.721
+GPT-OSS 120B: own priority + first fit,1.726,10.999,1.308,3.503
+GPT-OSS 120B: WSPT + own placement,2.219,15.422,0.314,4.082
+GPT-OSS 120B: both (as written),2.2,11.825,1.308,4.165
+Qwen 3.8 27B: own priority + first fit,3.859,5.539,4.266,4.515
+Qwen 3.8 27B: WSPT + own placement,2.248,15.422,0.314,3.876
+Qwen 3.8 27B: both (as written),3.327,6.927,4.266,4.108

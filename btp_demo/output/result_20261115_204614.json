@@ -1,0 +1,10 @@
+{
+ "source": "live: groq:openai/gpt-oss-120b, answered in 2s",
+ "idea": "Combine weight\u2011per\u2011time with urgency and instance headroom for priority, and pick the feasible machine that gives the largest slack after while penalising already loaded machines.",
+ "code": "def priority(f, c):\n    # weight per processing time\n    wp = f[\"wp\"]\n    # urgency: short deadline relative to processing time\n    urg = f[\"urgency\"]\n    # normalized headroom of the whole instance (more slack \u2192 higher score)\n    hr = f[\"headroom_norm\"]\n    # combine: give extra boost to urgent jobs when overall headroom is large\n    return wp * (1.0 + urg) * (1.0 + hr)\n\n\ndef choose_machine(i, f, c, M):\n    # slack after placing the job (\u22121 where it does not fit)\n    slack = M[\"slack_after\"]\n    # current load of the machine (total processing time already assigned)\n    load = M[\"load\"]\n    # reward slack, penalise load; machines that do not fit stay low (\u20111\u2011load)\n    return slack - 0.3 * load",
+ "lost": 11.0,
+ "wspt_lost": 11.0,
+ "opt_lost": 1.0,
+ "train_gap": 4.094125819308744,
+ "train_gap_wspt": 4.183242253844033
+}

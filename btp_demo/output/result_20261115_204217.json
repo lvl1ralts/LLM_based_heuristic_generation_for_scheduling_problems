@@ -1,0 +1,10 @@
+{
+ "source": "live: groq:openai/gpt-oss-120b, answered in 2s",
+ "idea": "Combine WSPT with urgency for priority and pick the feasible machine that maximizes slack\u2011after normalized by its current load, thus favoring valuable tight jobs while keeping machines balanced.",
+ "code": "def priority(f, c):\n    # WSPT (w/p) boosted for jobs with high urgency (p/d)\n    # urgency close to 1 means a tight deadline, so we give it extra weight\n    return f[\"wp\"] * (1.0 + f[\"urgency\"])\n\n\ndef choose_machine(i, f, c, M):\n    # Score only feasible machines (M[\"fits\"] is True)\n    # Higher slack after is good, but we also prefer less\u2011loaded machines\n    # Adding a tiny epsilon avoids division by zero on empty machines\n    eps = 1e-9\n    scores = np.where(\n        M[\"fits\"],\n        M[\"slack_after\"] / (M[\"load\"] + eps),\n        -np.inf   # infeasible machines get the worst score\n    )\n    return scores",
+ "lost": 11.0,
+ "wspt_lost": 11.0,
+ "opt_lost": 1.0,
+ "train_gap": 4.119479990571986,
+ "train_gap_wspt": 4.183242253844033
+}

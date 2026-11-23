@@ -1,0 +1,30 @@
+"""Heuristic for Pm | r=0 | sum w U  (live: groq:openai/gpt-oss-120b, answered in 3s)
+
+Idea: Combine weight density with urgency for priority and select the feasible machine that maximizes remaining slack while penalizing high load to improve balance.
+"""
+import math
+
+import numpy as np
+
+
+def priority(f, c):
+    # Higher score for jobs that are heavy, short and have tight deadlines (high density)
+    # and also for jobs that are urgent (large p/d). Multiplying combines both effects.
+    return f["dens"] * (1 + f["urgency"])
+
+
+def choose_machine(i, f, c, M):
+    # Load on each machine after adding job i
+    load_after = M["load"] + f["p"][i]
+
+    # Normalised load (larger load → lower desirability)
+    norm_load = load_after / c["max_d"]
+
+    # Score: remaining slack minus a fraction of the normalised load
+    alpha = 0.5
+    scores = M["slack_after"] - alpha * norm_load
+
+    # Infeasible machines have slack_after == -1; give them -inf so they are never chosen
+    scores = np.where(M["slack_after"] >= 0, scores, -np.inf)
+
+    return scores

@@ -1,0 +1,10 @@
+{
+ "source": "live: groq:openai/gpt-oss-120b, answered in 2s",
+ "idea": "Combine weight\u2011per\u2011time with deadline tightness for priority and select the feasible machine that maximizes slack after placement while penalizing already\u2011loaded machines.",
+ "code": "def priority(f, c):\n    # high wp and low laxity (tight deadlines) get higher scores\n    return f[\"wp\"] * (1.0 + (1.0 - f[\"laxity\"]))\n\n\ndef choose_machine(i, f, c, M):\n    # score = slack after placement divided by current load (plus tiny epsilon)\n    eps = 1e-9\n    return M[\"slack_after\"] / (M[\"load\"] + eps)",
+ "lost": 11.0,
+ "wspt_lost": 11.0,
+ "opt_lost": 1.0,
+ "train_gap": 4.119479990571986,
+ "train_gap_wspt": 4.183242253844033
+}

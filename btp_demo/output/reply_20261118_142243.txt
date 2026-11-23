@@ -1,0 +1,16 @@
+{Combine weight‑per‑time with job laxity for priority and choose the machine that maximizes a balance of resulting slack and current load, preferring slack but penalizing heavily loaded machines.}
+
+```python
+def priority(f, c):
+    # high weight per processing time and high laxity (more slack) are preferred
+    # f["wp"] = w/p, f["laxity"] = (d-p)/d  ∈ [0,1]
+    return f["wp"] * (1.0 + f["laxity"])
+
+
+def choose_machine(i, f, c, M):
+    # score = slack after placing the job minus a small penalty for current load
+    # larger slack is better; lower load is better to keep machines balanced
+    # M["slack_after"] = -1 for infeasible machines, so they stay lowest
+    load_penalty = 0.01 * M["load"]          # scale can be tuned
+    return M["slack_after"] - load_penalty
+```

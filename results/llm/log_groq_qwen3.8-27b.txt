@@ -1,0 +1,58 @@
+  self-check passed (decoder matches the GA's assignment decoder)
+  training: 12 instances, WSPT mean gap 4.183%
+  test: adversarial (24), similarity m=1 (40), similarity m=4 (40), benchmark (24)
+
+== groq_qwen_qwen3.8-27b ==
+    gen 0 seed: gap  3.503%  WSPT priority (weight per unit of processing time); the job goes on th
+    gen 0 i1: failed  ValueError: not allowed: Import
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 5s
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 39s
+    gen 0 i1: failed  ValueError: not allowed: Import
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 6s
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 38s
+    gen 0 i1: gap  6.784%  Maximize job weight per unit processing time (density) while minimizin
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 12s
+    gen 0 i1: failed  ValueError: not allowed: Import
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 48s
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 6s
+    gen 0 i1: gap  6.893%  Prioritize jobs by high density (weight/processing time) and low deadl
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 4s
+    gen 0 i1: gap  4.147%  Assign jobs by decreasing density of weight per unit time, placing eac
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 11s
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 30s
+    gen 0 i1: failed  ValueError: not allowed: Import
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 26s
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 30s
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 60s
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 120s
+    gen 0 i1: failed  ValueError: not allowed: Import
+    gen 0 i1: failed  ValueError: not allowed: Import
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 39s
+    gen 0 i1: failed  ValueError: not allowed: Import
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 41s
+    gen 0 i1: failed  ValueError: not allowed: Import
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 11s
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 29s
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 15s
+    gen 0 i1: failed  ValueError: not allowed: Import
+    gen 1 e1: gap 11.060%  Maximize the product of job weight and normalized headroom to prioriti
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 42s
+    gen 1 e2: gap  4.754%  Prioritize jobs by the ratio of normalized weight to processing time n
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 14s
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 15s
+    gen 1 m1: gap 11.923%  Blend weight and urgency (inverse completion ratio) in priority to bal
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 47s
+    gen 1 m2: gap  8.558%  Increase the penalty weight for processing time from 0.2 to 0.5 to mor
+  generation 1: best 3.503%  (16 calls)
+    gen 2 e1: gap  3.809%  Maximize the urgency-adjusted value of jobs (weight scaled by laxity t
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 51s
+    [groq_qwen_qwen3.8-27b] HTTP 429, retrying in 30s
+    gen 2 e2: gap  3.965%  Prioritize jobs by high weight-to-processing-time ratio to maximize im
+  generation 2: best 3.503%  (18 calls)
+  stopping after generation 2: 18 calls (--max-calls)
+  test adversarial     WSPT  20.62  best_rule   8.21  seed  13.55  WSPT_bestfit  13.55  LLM  13.55  GA_joint   0.00
+  test similarity m=1  WSPT   0.31  best_rule   0.22  seed   0.31  WSPT_bestfit   0.31  LLM   0.31  GA_joint   0.01
+  test similarity m=4  WSPT   2.90  best_rule   2.31  seed   2.85  WSPT_bestfit   2.74  LLM   2.85  GA_joint   0.38
+  test benchmark       WSPT   1.91  best_rule   1.79  seed   1.77  WSPT_bestfit   1.74  LLM   1.77  GA_joint   0.89
+
+results -> D:\Lelouch\BTP\Code\results\llm

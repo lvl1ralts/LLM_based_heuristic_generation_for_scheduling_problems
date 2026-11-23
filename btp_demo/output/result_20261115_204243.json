@@ -1,0 +1,10 @@
+{
+ "source": "live: groq:qwen/qwen3.8-27b, answered in 1s",
+ "idea": "Use a priority that weights jobs by their weight normalized by processing time and deadline to favor urgent, high-value jobs, and assign them to the machine that maximizes the minimum slack after job placement to preserve future scheduling flexibility.",
+ "code": "def priority(f, c):\n    # Weighted Shortest Processing Time adjusted for urgency\n    # Use wp = w/(p*d) to balance weight, processing time, and deadline urgency\n    return f[\"dens\"]\n\n\ndef choose_machine(i, f, c, M):\n    # Assign to the machine that maximizes the minimum slack after adding job i\n    # This preserves future flexibility for other jobs\n    return M[\"slack_after\"]",
+ "lost": 11.0,
+ "wspt_lost": 11.0,
+ "opt_lost": 1.0,
+ "train_gap": 4.753853740818637,
+ "train_gap_wspt": 4.183242253844033
+}

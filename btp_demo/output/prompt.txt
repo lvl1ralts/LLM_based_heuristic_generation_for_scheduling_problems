@@ -1,0 +1,52 @@
+We schedule n jobs on m identical machines. Every job is available at time 0
+and has a processing time p, a deadline d and a weight w. A job is on time if it
+finishes by its deadline; a late job earns nothing, so it can be left out. The
+goal is to keep as much total weight on time as possible (equivalently, to
+minimise the total weight of late jobs).
+
+You design a heuristic made of two Python functions.
+
+1) priority(f, c) -> numpy array of n scores. Jobs are tried in decreasing score.
+2) choose_machine(i, f, c, M) -> numpy array of m scores. Job i is offered only
+   to the machines where it still fits (every job on that machine stays on time
+   when the machine runs its jobs in deadline order). The job goes on the
+   feasible machine with the highest score. If no machine fits, the job is late.
+   This function is called only when two or more machines fit.
+
+f holds per-job numpy arrays (length n):
+  p, d, w; wp = w/p; slack = d - p; laxity = (d - p)/d; urgency = p/d;
+  dens = w/(p*d); headroom = m*d - (total p of jobs due no later than d);
+  headroom_norm = headroom / total p; d_rank (0..1 by deadline);
+  p_norm, w_norm, d_norm (divided by their max); cum_p_before (total p due no
+  later than d).
+c holds instance scalars: m, n, total_p, total_w, mean_p, max_d, min_d, mean_d,
+  load = total_p / (m * max_d).
+M holds per-machine numpy arrays (length m) at the moment job i is placed:
+  load (total processing time already on the machine), count (jobs on it),
+  min_slack (smallest d - finish time among its jobs; max_d if empty),
+  fits (bool), slack_after (smallest slack on the machine if job i is added;
+  -1 where it does not fit), finish_after (finish time of job i there; -1 where
+  it does not fit).
+
+f, c and M are dictionaries: write f["wp"], c["m"], M["slack_after"].
+
+Rules: use only numpy (as np) and math, which are already available; no
+import statements; no randomness; return arrays of the right length; keep the
+code short and readable so a person can understand the rule.
+
+Here is a heuristic:
+
+Heuristic 1 (mean gap 4.147%, lower is better)
+Idea: Use WSPT priority to focus on high-weight, short-processing jobs, and assign them to the machine that maximizes the resulting minimum slack to preserve future flexibility.
+```python
+def priority(f, c):
+    return f["wp"]
+
+
+def choose_machine(i, f, c, M):
+    return M["slack_after"]
+```
+
+Change its logic to make it better. Keep what works.
+Reply with your idea in one sentence inside curly braces {}, then the code
+for both functions in a single ```python code block. No other text.

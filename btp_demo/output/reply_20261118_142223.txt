@@ -1,0 +1,17 @@
+{Combine weight‑per‑time with deadline urgency for priority, and pick the feasible machine that maximizes slack while penalizing already‑loaded machines.}
+
+```python
+def priority(f, c):
+    # higher weight per processing time, boosted for tight deadlines (urgency = p/d)
+    return f["wp"] * (1.0 + f["urgency"])
+
+
+def choose_machine(i, f, c, M):
+    # normalized load to keep machines balanced
+    norm_load = M["load"] / (c["max_d"] * c["m"])
+    # score = remaining slack minus load penalty
+    score = M["slack_after"] - norm_load
+    # infeasible machines get -inf so they are never chosen
+    score = np.where(M["fits"], score, -np.inf)
+    return score
+```

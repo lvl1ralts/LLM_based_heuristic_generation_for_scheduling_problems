@@ -1,0 +1,69 @@
+﻿  self-check passed (decoders verified on 40 random instances)
+
+=== adversarial ===
+  adv bimodal_p__WSPT-Laxity           opt  20.0  WSPT  27.0  GA-priority  27.0  GA-assignment  20.0  GA-joint  20.0
+  adv bimodal_p__WSPT                  opt   4.0  WSPT  18.0  GA-priority   4.0  GA-assignment   8.0  GA-joint   4.0
+  adv in-dist__WSPT-Laxity             opt  10.0  WSPT  17.0  GA-priority  14.0  GA-assignment  10.0  GA-joint  10.0
+  adv in-dist__WSPT                    opt   7.0  WSPT  17.0  GA-priority  15.0  GA-assignment   7.0  GA-joint   7.0
+  adv large_n__WSPT-Laxity             opt  11.0  WSPT  11.0  GA-priority  11.0  GA-assignment  11.0  GA-joint  11.0
+  adv large_n__WSPT                    opt  21.0  WSPT  30.0  GA-priority  21.0  GA-assignment  30.0  GA-joint  21.0
+  adv lognormal_p__WSPT-Laxity         opt  33.0  WSPT  33.0  GA-priority  33.0  GA-assignment  33.0  GA-joint  33.0
+  adv lognormal_p__WSPT                opt   1.0  WSPT  11.0  GA-priority  11.0  GA-assignment   1.0  GA-joint   1.0
+  adv loose_T0.1__WSPT-Laxity          opt   0.0  WSPT   3.0  GA-priority   3.0  GA-assignment   0.0  GA-joint   0.0
+  adv loose_T0.1__WSPT                 opt   0.0  WSPT  10.0  GA-priority   5.0  GA-assignment   0.0  GA-joint   0.0
+  adv many_machines__WSPT-Laxity       opt   9.0  WSPT   9.0  GA-priority   9.0  GA-assignment   9.0  GA-joint   9.0
+  adv many_machines__WSPT              opt   5.0  WSPT  13.0  GA-priority  11.0  GA-assignment   5.0  GA-joint   5.0
+  adv narrow_R0.1__WSPT-Laxity         opt  18.0  WSPT  24.0  GA-priority  18.0  GA-assignment  24.0  GA-joint  18.0
+  adv narrow_R0.1__WSPT                opt   4.0  WSPT  14.0  GA-priority  11.0  GA-assignment   4.0  GA-joint   4.0
+  adv scale-shift__WSPT-Laxity         opt  13.0  WSPT  15.0  GA-priority  13.0  GA-assignment  15.0  GA-joint  13.0
+  adv scale-shift__WSPT                opt   5.0  WSPT   6.0  GA-priority   6.0  GA-assignment   5.0  GA-joint   5.0
+  adv single_m1__WSPT-Laxity           opt   5.0  WSPT  11.0  GA-priority   5.0  GA-assignment  11.0  GA-joint   5.0
+  adv single_m1__WSPT                  opt  11.0  WSPT  20.0  GA-priority  11.0  GA-assignment  20.0  GA-joint  11.0
+  adv tight_T0.8__WSPT-Laxity          opt  28.0  WSPT  32.0  GA-priority  28.0  GA-assignment  32.0  GA-joint  28.0
+  adv tight_T0.8__WSPT                 opt  10.0  WSPT  19.0  GA-priority  10.0  GA-assignment  19.0  GA-joint  10.0
+  adv w_anticorr__WSPT-Laxity          opt   5.0  WSPT   9.0  GA-priority   9.0  GA-assignment   5.0  GA-joint   5.0
+  adv w_anticorr__WSPT                 opt   7.0  WSPT  17.0  GA-priority  16.0  GA-assignment   7.0  GA-joint   7.0
+  adv w_correlated__WSPT-Laxity        opt  23.0  WSPT  39.0  GA-priority  23.0  GA-assignment  25.0  GA-joint  23.0
+  adv w_correlated__WSPT               opt  21.0  WSPT  37.0  GA-priority  25.0  GA-assignment  23.0  GA-joint  21.0
+
+=== similarity ===
+  sim m=1, n=50  none similar             WSPT  0.02  best_rule  0.02  GA-priority  0.00  GA-assignment  0.02  GA-joint  0.00
+  sim m=1, n=50  p similar                WSPT  0.12  best_rule  0.12  GA-priority  0.00  GA-assignment  0.12  GA-joint  0.00
+  sim m=1, n=50  d similar                WSPT  0.21  best_rule  0.19  GA-priority  0.02  GA-assignment  0.21  GA-joint  0.02
+  sim m=1, n=50  w similar                WSPT  0.44  best_rule  0.42  GA-priority  0.00  GA-assignment  0.44  GA-joint  0.00
+  sim m=1, n=50  p & d similar            WSPT  0.13  best_rule  0.07  GA-priority  0.07  GA-assignment  0.13  GA-joint  0.07
+  sim m=1, n=50  p & w similar            WSPT  0.63  best_rule  0.10  GA-priority  0.00  GA-assignment  0.63  GA-joint  0.00
+  sim m=1, n=50  d & w similar            WSPT  0.62  best_rule  0.51  GA-priority  0.01  GA-assignment  0.62  GA-joint  0.00
+  sim m=1, n=50  p & d & w similar        WSPT  0.34  best_rule  0.34  GA-priority  0.00  GA-assignment  0.37  GA-joint  0.00
+  sim m=4, n=40  none similar             WSPT  2.55  best_rule  2.32  GA-priority  2.31  GA-assignment  0.25  GA-joint  0.21
+  sim m=4, n=40  p similar                WSPT  1.48  best_rule  1.46  GA-priority  1.41  GA-assignment  0.25  GA-joint  0.29
+  sim m=4, n=40  d similar                WSPT  4.63  best_rule  4.25  GA-priority  3.49  GA-assignment  0.16  GA-joint  0.22
+  sim m=4, n=40  w similar                WSPT  3.80  best_rule  3.19  GA-priority  2.43  GA-assignment  0.63  GA-joint  0.45
+  sim m=4, n=40  p & d similar            WSPT  0.05  best_rule  0.00  GA-priority  0.00  GA-assignment  0.05  GA-joint  0.00
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+  sim m=4, n=40  p & w similar            WSPT  3.64  best_rule  2.71  GA-priority  0.46  GA-assignment  0.35  GA-joint  0.41
+  sim m=4, n=40  d & w similar            WSPT  4.53  best_rule  3.74  GA-priority  2.95  GA-assignment  0.94  GA-joint  0.85
+  sim m=4, n=40  p & d & w similar        WSPT  2.45  best_rule  0.73  GA-priority  0.40  GA-assignment  1.57  GA-joint  0.51
+
+=== benchmark ===
+  bench in-dist n50-100            WSPT  2.14  best_rule  1.95  GA-priority  1.95  GA-assignment  1.04  GA-joint  1.04
+  bench scale-shift n200-300       WSPT  1.77  best_rule  1.67  GA-priority  1.57  GA-assignment  0.92  GA-joint  0.84
+  bench shift: bimodal p           WSPT  2.62  best_rule  2.62  GA-priority  2.62  GA-assignment  1.66  GA-joint  1.46
+  bench shift: lognormal p         WSPT  1.22  best_rule  1.14  GA-priority  1.14  GA-assignment  0.59  GA-joint  0.49
+  bench shift: very tight T=0.8    WSPT  3.65  best_rule  3.65  GA-priority  3.38  GA-assignment  1.84  GA-joint  1.75
+  bench loose T=0.1                WSPT  0.00  best_rule  0.00  GA-priority  0.00  GA-assignment  0.00  GA-joint  0.00
+  bench weights correlated         WSPT  3.29  best_rule  2.90  GA-priority  2.13  GA-assignment  1.25  GA-joint  1.09
+  bench weights anticorrelated     WSPT  1.15  best_rule  1.15  GA-priority  1.15  GA-assignment  0.54  GA-joint  0.54
+  bench narrow due range R=0.1     WSPT  1.12  best_rule  1.12  GA-priority  0.89  GA-assignment  0.37  GA-joint  0.34
+  bench many machines m=16         WSPT  4.61  best_rule  4.56  GA-priority  4.28  GA-assignment  2.97  GA-joint  2.65
+  bench single machine m=1         WSPT  0.48  best_rule  0.00  GA-priority  0.00  GA-assignment  0.48  GA-joint  0.00
+  bench large scale n=500          WSPT  0.87  best_rule  0.78  GA-priority  0.77  GA-assignment  0.42  GA-joint  0.49
+
+=== mean % gap to the reference (exact optimum, LP bound on benchmark m>1) ===
+          experiment  instances  WSPT  best_rule  GA-priority  GA-assignment  GA-joint  GA-joint (best)  GA-joint beats WSPT on  GA-joint beats GA-priority on
+         adversarial         24 20.62       8.21         7.52           6.97      0.00             0.00                      21                             12
+similarity m=1, n=50         40  0.31       0.22         0.01           0.32      0.01             0.01                      25                              2
+similarity m=4, n=40         40  2.89       2.30         1.68           0.53      0.37             0.21                      36                             29
+           benchmark         24  1.91       1.79         1.66           1.01      0.89             0.83                      21                             20
+
+done in 900s -> D:\Lelouch\BTP\Code\results\ga

@@ -1,0 +1,10 @@
+{
+ "source": "saved: Gemma 4 31B (report)",
+ "idea": "Use WSPT priority to focus on high-value jobs and a Best-Fit machine selection strategy by maximizing the load on the chosen machine to preserve large contiguous time blocks on other machines.",
+ "code": "def priority(f, c):\n    return f[\"wp\"]\n\n\ndef choose_machine(i, f, c, M):\n    return M[\"load\"]",
+ "lost": 1.0,
+ "wspt_lost": 11.0,
+ "opt_lost": 1.0,
+ "train_gap": 3.4697961045399257,
+ "train_gap_wspt": 4.183242253844033
+}

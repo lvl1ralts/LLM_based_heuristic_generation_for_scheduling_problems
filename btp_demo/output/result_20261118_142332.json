@@ -1,0 +1,10 @@
+{
+ "source": "live: groq:openai/gpt-oss-120b, answered in 2s",
+ "idea": "Combine weight\u2011per\u2011processing with laxity for priority, and when several machines can accept the job, pick the one that keeps the largest slack while also preferring a less\u2011loaded machine.",
+ "code": "def priority(f, c):\n    # high wp (weight per time) and high laxity (more slack) are good\n    # scale laxity to [0,1] already; add it as a multiplier\n    return f[\"wp\"] * (1.0 + f[\"laxity\"])\n\ndef choose_machine(i, f, c, M):\n    # score = slack after placement minus a small load penalty\n    # normalize load by the maximum possible load per machine (max_d * m)\n    norm_load = M[\"load\"] / (c[\"max_d\"] * c[\"m\"])\n    return M[\"slack_after\"] - norm_load",
+ "lost": 11.0,
+ "wspt_lost": 11.0,
+ "opt_lost": 1.0,
+ "train_gap": 4.362989358641948,
+ "train_gap_wspt": 4.183242253844033
+}
